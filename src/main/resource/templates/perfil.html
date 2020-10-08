@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="master">
+<head>
+    <meta charset="UTF-8">
+
+    <!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Los iconos tipo Solid de Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <title>Profile</title>
+
+    <!-- Nuestro css-->
+    <link th:href="@{/css/style.css}" rel="stylesheet">
+
+</head>
+<body>
+<nav id="top-nav">
+    <div class="contenedor">
+        <div class="fila">
+            <ul class="menu-simple">
+                <li><a href="#">Linkedin</a></li>
+                <li><a href="#">Bumeran</a></li>
+                <li><a href="#">CompuTrabajo</a></li>
+            </ul>
+            <ul class="menu-simple">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </div><!-- contenedor -->
+</nav><!-- top-nav -->
+
+<header id="main-header">
+    <div class="contenedor">
+        <div class="fila">
+            <h1>"JAZBA"</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a th:href="@{/}">Noticias</a></li>
+                    <li><a th:href="@{/}">Eventos</a></li>
+                    <li><a th:href="@{/menu}">Menu</a></li>
+                    <li><a th:href="@{/}">Salir</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+</header><!-- main-header -->
+
+<!-- perfil del usuario-->
+<section class="perfil" style="margin-top: 100px; padding-bottom: 300px;">
+
+    <div class="row">
+        <div class="col-md-6"><img th:src="@{/img/perfil.jpg}" height="400px" width="60%"></div>
+        <div class="col-md-6">
+
+<!--            <table>-->
+<!--                <thead>-->
+<!--                <tr>-->
+<!--                    <th>Nombre</th>-->
+<!--                    <th>Apellido Paterno</th>-->
+<!--                    <th>Apellido Materno</th>-->
+<!--                    <th>Correo</th>-->
+<!--                    <th>Telefono</th>-->
+<!--                </tr>-->
+<!--                </thead>-->
+<!--                <tbody>-->
+<!--                <tr th:each="user : ${users}">-->
+<!--                    <td th:text="${user.username}"></td>-->
+<!--                    <td th:text="${user.lastNameFather}"></td>-->
+<!--                    <td th:text="${user.lastNameMother}"></td>-->
+<!--                    <td th:text="${user.email}"></td>-->
+<!--                    <td th:text="${user.phone}"></td>-->
+<!--                </tr>-->
+<!--                </tbody>-->
+<!--            </table>-->
+        </div>
+    </div>
+
+
+</section>
+
+
+
+<footer id="main-footer">
+    <div class="contenedor">
+        <div class="fila">
+            <div class="col25">
+                <h4>"JAZBA" CORPORATION </h4>
+            </div>
+            <div class="col25">
+                <h4>Contáctenos</h4>
+                <p>Av. La fontana 435<br>
+                    La Molina - Lima - Perú<br>
+                    Teléfono:(051)-1321543<br>
+                    Correo electrónico: info@ideascreativas.pe
+                </p>
+            </div>
+            <div class="col50">
+                <h4>Información corporativa</h4>
+                <div class="fila" id="footer-corporativo">
+                    <div class="col50">
+                        <h5>Oficinas</h5>
+                        <ul>
+                            <li>Lima</li>
+                            <li>Trujillo</li>
+                            <li>Iquitos</li>
+                        </ul>
+                    </div>
+                    <div class="col50">
+                        <h5>EXTRA</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore illum soluta aut enim ea beatae modi dicta repellat perferendis facere qui, cum architecto distinctio quas tempore? At quidem officia accusamus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer><!-- main-footer -->
+
+
+
+<a href="#" id="irarriba"><i class="fas fa-chevron-up"></i></a>
+</body>
+</html>
